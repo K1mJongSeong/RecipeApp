@@ -26,7 +26,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Image.asset(
           'assets/images/appbar.jpg',
-          fit: BoxFit.fill,
+          fit: BoxFit.cover,
           width: 500,
         ),
         backgroundColor: (Color(0xFFF8CD53)),
