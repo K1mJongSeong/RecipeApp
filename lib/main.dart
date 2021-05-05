@@ -22,14 +22,13 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen[600],
+      backgroundColor: Color(0xFFFFF692),
       appBar: AppBar(
         title: Image.asset(
-          'assets/images/appbar.jpg',
-          fit: BoxFit.cover,
-          width: 500,
+          'assets/images/appbar2.png',
+          fit: BoxFit.fill,
         ),
-        backgroundColor: (Color(0xFFF8CD53)),
+        backgroundColor: (Color(0xFFFFF2B3)),
         centerTitle: true,
         elevation: 0.0,
       ),

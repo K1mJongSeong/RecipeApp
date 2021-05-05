@@ -4,6 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 import 'body.dart';
+import 'todoList.dart';
+import 'board.dart';
 
 final List<String> entries = <String>[
   '김치볶음밥',
@@ -129,7 +131,7 @@ class _NextState extends State<Next> {
       bottomNavigationBar: _bottomNavigationWidget(),
       appBar: AppBar(
         title: Image.asset('assets/images/appbar.jpg'),
-        backgroundColor: Colors.amberAccent[100],
+        backgroundColor: Color(0xFFFFF2B3),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -342,23 +344,23 @@ class _NextState extends State<Next> {
                             ),
                           ),
                           taskList(
-                              "Task1",
-                              "Description of task 1 to be updated here",
+                              "대파",
+                              "2,980원",
                               CupertinoIcons.check_mark_circled_solid,
                               Color(0xff00cf8d)),
                           taskList(
-                              "Task2",
-                              "Description of task 2 to be updated here",
-                              CupertinoIcons.clock_solid,
-                              Color(0xffff9e00)),
+                              "양파",
+                              "2,500원",
+                              CupertinoIcons.check_mark_circled_solid,
+                              Color(0xff00cf8d)),
                           taskList(
-                              "Task3",
-                              "Description of task 3 to be updated here",
-                              CupertinoIcons.clock_solid,
-                              Color(0xffff9e00)),
+                              "다진마늘",
+                              "3,000원",
+                              CupertinoIcons.check_mark_circled_solid,
+                              Color(0xff00cf8d)),
                           taskList(
-                              "Task4",
-                              "Description of task 4 to be updated here",
+                              "팽이버섯",
+                              "2,700원",
                               CupertinoIcons.check_mark_circled_solid,
                               Color(0xff00cf8d)),
                         ],
@@ -385,22 +387,24 @@ class _NextState extends State<Next> {
                       Positioned(
                         bottom: 40,
                         right: 20,
-                        child: Container(
-                          padding: EdgeInsets.all((20)),
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
-                              color: Color(0xffb038f1),
-                              boxShadow: [
-                                BoxShadow(color: Colors.black38, blurRadius: 30)
-                              ]),
-                          child: Text(
-                            "+",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 40,
-                            ),
-                          ),
+                        child: Column(
+                          children: [
+                            ButtonTheme(
+                                child: RaisedButton(
+                              color: Color(0xff30384c),
+                              elevation: 0.0,
+                              child: Icon(
+                                Icons.add_circle_outline_outlined,
+                                color: Colors.white,
+                                size: 55.0,
+                              ),
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          TodoListPage())),
+                            ))
+                          ],
                         ),
                       )
                     ],
@@ -415,7 +419,7 @@ class _NextState extends State<Next> {
         return Body();
         break;
     }
-    return Container();
+    return Board();
   }
 
   BottomNavigationBarItem _bottomNavigationBarItem(
@@ -448,7 +452,7 @@ class _NextState extends State<Next> {
       selectedLabelStyle: TextStyle(color: Colors.black),
       items: [
         _bottomNavigationBarItem("home", "홈"),
-        _bottomNavigationBarItem("location", "캘린더"),
+        _bottomNavigationBarItem("calendar", "캘린더"),
         _bottomNavigationBarItem("chat", "커뮤니티"),
         _bottomNavigationBarItem("user", "내 정보"),
       ],
