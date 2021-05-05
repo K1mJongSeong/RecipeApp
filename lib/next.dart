@@ -21,16 +21,16 @@ final List<String> entries = <String>[
 ];
 
 final List<String> entries2 = <String>[
-  '김치볶음밥',
-  '닭갈비',
-  '돼지고기김치볶음',
-  '떡볶이',
-  '오리주물럭',
-  '잡채',
-  '제육볶음',
-  '김치찌개',
-  '된장찌개',
-  '머핀'
+  '김치볶음밥은 김치의 톡 쏘는 맛이 볶은 밥의 느끼함을 보완해주어 맛의 균형이 잘 맞는다.',
+  '양념고추장에 재워 둔 닭갈비를 양배추·고구마·당근·파와 함께 볶는 음식.',
+  '돼지고기를 김치·파와 함께 볶은 음식.',
+  '떡과 부재료를 양념에 볶거나 끓여서 먹는 음식.',
+  '양념고추장에 재워 둔 오리고기를 양파·대파·부추·숙주나물 등과 함께 볶은 음식.',
+  '이름 그대로 잡다한 재료(당면, 돼지고기, 채소, 버섯 등)를 모아 볶은 음식.',
+  '양념고추장에 재워 둔 돼지고기를 볶은 음식.',
+  '한국의 대표적인 음식인 김치를 넣고 얼큰하게 끓인 음식.',
+  '된장을 푼 물에 갖은 재료를 넣어 끓인 음식.',
+  '밀가루에 설탕, 유지, 우유, 달걀, 베이킹파우더 따위를 넣고 틀을 사용하여 오븐에 구워 낸 음식.'
 ];
 
 final List<String> entries3 = <String>[
@@ -225,6 +225,7 @@ class _NextState extends State<Next> {
                           ),
                           Text(
                             '${entries2[index]}',
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                               color: Colors.black.withOpacity(0.3),
                               fontWeight: FontWeight.w500,
@@ -247,6 +248,10 @@ class _NextState extends State<Next> {
                                 ),
                                 SizedBox(
                                   width: 5,
+                                ),
+                                Icon(
+                                  Icons.favorite_outlined,
+                                  size: 15,
                                 ),
                                 Text('좋아요 : ${entries3[index]}'),
                               ],

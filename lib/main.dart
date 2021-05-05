@@ -81,10 +81,10 @@ class MyHomePage extends StatelessWidget {
                                 minWidth: 300.0,
                                 height: 50.0,
                                 child: RaisedButton(
-                                    color: Colors.orangeAccent,
+                                    color: Color(0xFFCCCC99),
                                     child: Icon(
-                                      Icons.check,
-                                      color: Colors.white,
+                                      Icons.login,
+                                      color: Colors.black,
                                       size: 35.0,
                                     ),
                                     onPressed: () {
