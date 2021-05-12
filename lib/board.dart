@@ -32,7 +32,7 @@ final List<String> entries4 = <String>[
   'assets/images/제육볶음.jpg',
   'assets/images/김치찌개.jpg',
   'assets/images/된장찌개.jpg',
-  'assets/images/muffin2.PNG',
+  'assets/images/spoon.png',
 ];
 
 class Board extends StatefulWidget {

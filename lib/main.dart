@@ -22,13 +22,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFF692),
+      backgroundColor: Color(0xFFF2ECD7),
       appBar: AppBar(
         title: Image.asset(
-          'assets/images/appbar2.png',
+          'assets/images/appbar3.png',
           fit: BoxFit.fill,
+          width: 1000,
         ),
-        backgroundColor: (Color(0xFFFFF2B3)),
+        backgroundColor: (Color(0xFFCCCC99)),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -44,9 +45,11 @@ class MyHomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Center(
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/muffin2.PNG'),
-                      radius: 70.0,
+                    child: Image(
+                      image: AssetImage(
+                        "assets/images/spoon2.png",
+                      ),
+                      width: 230,
                     ),
                   ),
                   SizedBox(
