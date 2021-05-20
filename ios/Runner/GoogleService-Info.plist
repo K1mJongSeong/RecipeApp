@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>524033716419-8416hfduanas1ug4crhd0e9ob71f0rej.apps.googleusercontent.com</string>
+	<string>99989429446-htrflkb5s6pcusocpq4ebrvfdc65074g.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.524033716419-8416hfduanas1ug4crhd0e9ob71f0rej</string>
+	<string>com.googleusercontent.apps.99989429446-htrflkb5s6pcusocpq4ebrvfdc65074g</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBSZ4f7BXA_y0_rEajFAe5-pziBn2Kthk8</string>
+	<string>AIzaSyC_717wGFUcgdJRyIaOnqsd4cXRyqos3BI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>524033716419</string>
+	<string>99989429446</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.jongseong</string>
+	<string>com.example.myFirstFlutterApp</string>
 	<key>PROJECT_ID</key>
-	<string>testsnslogin-308c1</string>
+	<string>bittersweetrecipeapp</string>
 	<key>STORAGE_BUCKET</key>
-	<string>testsnslogin-308c1.appspot.com</string>
+	<string>bittersweetrecipeapp.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:524033716419:ios:3eb3b83660ff1cb70cf276</string>
+	<string>1:99989429446:ios:521a41bfa733991d180bc7</string>
 </dict>
 </plist>

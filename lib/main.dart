@@ -1,3 +1,4 @@
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'next.dart';
@@ -25,7 +26,7 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: Color(0xFFF2ECD7),
       appBar: AppBar(
         title: Image.asset(
-          'assets/images/appbar3.png',
+          'assets/images/appbar6.PNG',
           fit: BoxFit.fill,
           width: 1000,
         ),
@@ -47,7 +48,7 @@ class MyHomePage extends StatelessWidget {
                   Center(
                     child: Image(
                       image: AssetImage(
-                        "assets/images/spoon2.png",
+                        "assets/images/icon3.PNG",
                       ),
                       width: 230,
                     ),

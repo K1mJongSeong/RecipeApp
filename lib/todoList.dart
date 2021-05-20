@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter_app/colors.dart';
 
 class Todo {
   bool isDone = false;
@@ -12,9 +13,6 @@ class Doit extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "할 일 관리",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: TodoListPage(),
     );
   }
@@ -38,8 +36,13 @@ class _TodoListPageState extends State<TodoListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: sig,
         title: Text(
           "To-do List",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
         ),
       ),
       body: Padding(

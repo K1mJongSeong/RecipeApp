@@ -5,7 +5,7 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 import 'body.dart';
 import 'todoList.dart';
-import 'board.dart';
+import 'wirtePost.dart';
 
 final List<String> entries = <String>[
   '김치볶음밥',
@@ -130,8 +130,8 @@ class _NextState extends State<Next> {
       body: _bodyWidget(),
       bottomNavigationBar: _bottomNavigationWidget(),
       appBar: AppBar(
-        title: Image.asset('assets/images/appbar.jpg'),
-        backgroundColor: Color(0xFFFFF2B3),
+        title: Image.asset('assets/images/appbar6.PNG'),
+        backgroundColor: Color(0xFFCCCC99),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -147,7 +147,7 @@ class _NextState extends State<Next> {
               accountName: Text('김종성'),
               accountEmail: Text('miaer789@naver.com'),
               decoration: BoxDecoration(
-                color: Colors.lightGreen[300],
+                color: Color(0xFFCCCC99),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(40.0),
                   bottomRight: Radius.circular(40.0),
